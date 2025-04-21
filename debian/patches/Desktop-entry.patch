@@ -1,0 +1,13 @@
+Description: Tweak desktop file to fit Debian
+Author: Dave Hibberd <d@vehibberd.com> 
+Forwarded: not-needed
+Last-Update: 2025-01-08
+--- a/qsstv.desktop
++++ b/qsstv.desktop
+@@ -9,5 +9,5 @@
+ StartupNotify=true
+ Terminal=false
+ Type=Application
+-Categories=Education;
++Categories=Network;HamRadio;
+ X-AppImage-Version=1
