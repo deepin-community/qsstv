@@ -1,0 +1,5 @@
+debian/templates/comment.templ
+debian/templates/CQ_1.templ
+debian/templates/CQ_2.templ
+debian/templates/im_reply.templ
+debian/templates/simple_replay.templ

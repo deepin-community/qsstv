@@ -1,0 +1,5 @@
+# Upstream url is http only
+qsstv source: debian-watch-uses-insecure-uri http://users.telenet.be/on4qz/qsstv/downloads/*
+# These are binary data files
+qsstv source: very-long-line-length-in-source-file * > 512 *.templ*
+qsstv source: very-long-line-length-in-source-file * > 512 *documentation/manual/doxygen_sqlite3.db*

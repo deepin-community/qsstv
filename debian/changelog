@@ -1,5 +1,382 @@
-template-repository (1.0-1) unstable; urgency=medium
+qsstv (9.5.8-6) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * Fix icon path in desktop file.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Daniel Rusek <mail@asciiwolf.com>  Thu, 23 Jan 2025 17:20:53 +0100
+
+qsstv (9.5.8-5) unstable; urgency=medium
+
+  * Add better quality desktop icon.
+
+ -- Daniel Rusek <mail@asciiwolf.com>  Thu, 02 Jan 2025 23:01:30 +0100
+
+qsstv (9.5.8-4) unstable; urgency=medium
+
+  * Fixed wrong config path in the manpage.
+
+ -- Enrico Rossi <e.rossi@tecnobrain.com>  Sat, 06 Apr 2024 16:38:08 +0200
+
+qsstv (9.5.8-3) unstable; urgency=medium
+
+  [ Daniele Forsi ]
+  * Add debian/install to install .desktop file and icon. Closes: #1017069
+  * Fix override for lintian warning debian-watch-uses-insecure-uri.
+  * Override lintian pedantic very-long-line-length-in-source-file.
+
+  [ Christoph Berg ]
+  * Update homepage location.
+
+ -- Christoph Berg <myon@debian.org>  Sun, 06 Nov 2022 12:52:33 +0100
+
+qsstv (9.5.8-2) unstable; urgency=medium
+
+  * Upload to unstable
+  * Standards bump to 4.6.0.0
+
+ -- Dave Hibberd <d@vehibberd.com>  Wed, 08 Sep 2021 09:12:00 +0100
+
+qsstv (9.5.8-1) experimental; urgency=medium
+
+  * New upstream version 9.5.8
+
+ -- Dave Hibberd <d@vehibberd.com>  Sun, 15 Aug 2021 23:06:37 +0100
+
+qsstv (9.5.3-1) experimental; urgency=medium
+
+  * New upstream version 9.5.3.
+  * Retire Steve and Colin from Uploaders, thanks for your work!
+  * Add myself to Uploaders.
+
+ -- Christoph Berg <myon@debian.org>  Tue, 20 Apr 2021 22:36:08 +0200
+
+qsstv (9.4.4-3) unstable; urgency=medium
+
+  * Source only upload to accomodate Hamlib 4 on amd64
+  * Added Rules-Requires-Root: no
+
+ -- Dave Hibberd <d@vehibberd.com>  Sat, 30 Jan 2021 19:47:07 +0000
+
+qsstv (9.4.4-2) unstable; urgency=medium
+
+  [ Dave Hibberd ]
+  * Added debian/gitlab-ci.yml
+  * Bumped standards to 4.5.1.0
+  * Updated to dh 13
+
+  [ Debian Janitor ]
+  * debian/copyright: use spaces rather than tabs to start continuation lines.
+
+ -- Dave Hibberd <d@vehibberd.com>  Wed, 27 Jan 2021 21:06:44 +0000
+
+qsstv (9.4.4-1) unstable; urgency=medium
+
+  * New Upstream Release
+    - Various Improvements
+  * Removed unused patches
+  * Updated to Debian Standards 4.4.0.1
+  * Updated to debhelper 12
+  * Removed reference to nonfree files in d/copyright
+
+ -- Dave Hibberd <d@vehibberd.com>  Sat, 17 Aug 2019 21:27:30 +0100
+
+qsstv (9.2.6+repack-1) unstable; urgency=medium
+
+  * New Upstream Release
+    - Fixes openjpeg compatibility
+  * debian/patches/series
+    - removed openjpeg.patch from series
+  * Updated to Debian Standards 4.1.3
+  * Updated to debhelper 11
+
+ -- Dave Hibberd <d@vehibberd.com>  Sat, 20 Jan 2018 13:07:53 +0000
+
+qsstv (9.2.4+repack-3) unstable; urgency=medium
+
+  * Fix openjpeg 2.3 compatability
+  	- Closes: #878815
+
+ -- Dave Hibberd <d@vehibberd.com>  Sat, 28 Oct 2017 23:33:02 +0100
+
+qsstv (9.2.4+repack-2) unstable; urgency=medium
+
+  * Fix openjpeg 2.2 compatibility
+    - Closes: #876811
+  * Updated to Debian Standards 4.1.1.0
+ -- Dave Hibberd <d@vehibberd.com>  Sun, 01 Oct 2017 20:35:46 +0100
+
+qsstv (9.2.4+repack-1) unstable; urgency=medium
+
+  * Imported new upstream release
+
+ -- Dave Hibberd <d@vehibberd.com>  Sat, 21 Jan 2017 23:21:35 +0000
+
+qsstv (9.1.8+repack-1) unstable; urgency=medium
+
+  * Imported new upstream release
+
+ -- Dave Hibberd <d@vehibberd.com>  Tue, 06 Sep 2016 20:22:21 +0100
+
+qsstv (9.1.5+repack-2) unstable; urgency=medium
+
+  * Updated Vcs-Git to the correct URI
+
+ -- Dave Hibberd <d@vehibberd.com>  Fri, 03 Jun 2016 18:42:47 +0100
+
+qsstv (9.1.5+repack-1) unstable; urgency=medium
+
+  * New Upstream Release
+  * Jasper dependency removed Closes: #818208
+  * debian/control
+    - Updated Standards Version to 3.9.8
+    - Added VCS-* information
+    - Updated build time depdendencies
+  * debian/copyright
+    - Tidied up to give better attribution and more information
+    - Included Files-Excluded
+  * debian/rules
+    - Simplified as far as possible
+  * debian/qsstv.install
+    - Installs desktop file and icon
+  * debian/qsstv.menu
+    - Removed as per policy updates
+  * debian/qsstv.examples
+    - Installs example files
+  * debian/README.debian
+    - Added updates
+  * debian/manpages
+    - Handles manpage properly
+
+ -- Dave Hibberd <d@vehibberd.com>  Thu, 02 Jun 2016 21:53:53 +0100
+
+qsstv (8.2.12-1) unstable; urgency=medium
+
+  * New Upstream version.
+  * grey image bug fixed upstream Closes: #787602
+  * Tidy up Uploaders list.
+
+ -- Colin Tuckley <colint@debian.org>  Tue, 28 Jul 2015 17:21:30 +0100
+
+qsstv (8.2.11-1) unstable; urgency=medium
+
+  * New Upstream version.
+  * Bump standards version to 3.9.6 (no changes required).
+  * Include updated debian/watch file from bartm.
+
+ -- Colin Tuckley <colint@debian.org>  Sun, 03 May 2015 15:32:30 +0100
+
+qsstv (8.2.7-2) unstable; urgency=medium
+
+  * Fix broken watch file.
+  * Convert to Linux-any since package fails on KFreeBSD etc.
+
+ -- Colin Tuckley <colint@debian.org>  Sat, 06 Sep 2014 10:33:59 +0100
+
+qsstv (8.2.7-1) unstable; urgency=medium
+
+  * New upstream release (Apr 12, 2014) Closes: #737071, #709043
+  * Bump standards version to 3.9.5 (no changes required).
+  * Add debian/qsstv.desktop Closes: #737060
+  * The documentation is no longer included so remove all
+    references to it in the debian dir.
+
+ -- Colin Tuckley <colint@debian.org>  Fri, 22 Aug 2014 13:31:50 +0100
+
+qsstv (7.1.7-3) unstable; urgency=low
+
+  * Lintian fixes
+  * qsstv completely rewritten for 7.1.*
+    Closes: #261170, #265392, #266097, #260892, #261172, #261169,
+    #262374, #267106, #267303, #261728, #261168
+  * Include sample templates in qsstv/examples
+  * Converted debian/copyright to machine-readable format (version 1.0)
+
+ -- Steve Kostecke <steve@debian.org>  Tue, 05 Jun 2012 08:52:35 -0500
+
+qsstv (7.1.7-2) unstable; urgency=low
+
+  * Fix FTBFS with GCC 4.7. Thanks Martijn van Brummelen
+    Closes: #672079, #672118.
+
+ -- Steve Kostecke <steve@debian.org>  Tue, 08 May 2012 15:22:00 -0500
+
+qsstv (7.1.7-1) unstable; urgency=low
+
+  * New upstream release (Jan 4, 2012)
+  * Switch to dpkg-source 3.0 (quilt) format
+
+ -- Steve Kostecke <steve@debian.org>  Fri, 20 Apr 2012 22:42:27 -0500
+
+qsstv (5.3c-8.1) unstable; urgency=low
+
+  * Retiring - remove myself from the uploaders list.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Mon, 16 Nov 2009 18:22:08 +0000
+
+qsstv (5.3c-8) unstable; urgency=low
+
+  * Remove build depends on ancient libqt3-compat-headers.
+    Closes: #464804. This also required several changes to source code,
+    especially #include statements.
+  * Menu transition.
+  * Update config.guess, config.sub.
+  * Lintian fixes.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Sun, 10 Feb 2008 19:52:54 +0100
+
+qsstv (5.3c-7) unstable; urgency=low
+
+  * Fix FTBFS with GCC 4.3. Thanks Martin Michlmayr.
+    Closes: #417504.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Tue, 03 Apr 2007 10:38:36 +0200
+
+qsstv (5.3c-6) unstable; urgency=low
+
+  * Transfer ownership to Debian-Hams.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Sun,  1 Apr 2007 20:42:40 +0200
+
+qsstv (5.3c-5) unstable; urgency=low
+
+  * correct the watch file.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Wed, 22 Feb 2006 23:03:51 +0100
+
+qsstv (5.3c-4) unstable; urgency=low
+
+  * Use config var for repeater mode timer. Patch by Lawrence Glaister,
+    VE7IT, thanks! Closes: #334181.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Sun, 22 Jan 2006 18:29:58 +0100
+
+qsstv (5.3c-3) unstable; urgency=low
+
+  * Rebuild against transitioned Qt.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Thu,  1 Sep 2005 19:42:28 +0200
+
+qsstv (5.3c-2) unstable; urgency=low
+
+  * Build against latest qt.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Fri, 12 Aug 2005 14:41:25 +0200
+
+qsstv (5.3c-1) unstable; urgency=low
+
+  * New upstream release.
+  * Document an undocumented feature in README.debian related to shifted
+    faxes. Closes: #265391.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Mon, 27 Dec 2004 10:18:32 +0100
+
+qsstv (5.3b-2) unstable; urgency=low
+
+  * Make sure that doc-base nows about the new documentation path. Please
+    note: docs are in /usr/share/qsstv.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Thu, 16 Dec 2004 17:48:55 +0100
+
+qsstv (5.3b-1) unstable; urgency=low
+
+  * New upstream release, installs documentation in /usr/share/qsstv, one
+    should change the documentation path via Options/Configuration in the
+    RX Window.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Wed, 15 Dec 2004 19:07:42 +0100
+
+qsstv (5.3a-1) unstable; urgency=low
+
+  * New upstream.
+  * Migrate to debhelper.
+  * Watch file added.
+  * Install chapter 7 and beyond of documentation. Closes: #260895.
+  * Also include images. Closes: #260893.
+  * Correct the manual page. Closes: #261171.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Fri, 10 Dec 2004 20:34:04 +0100
+
+qsstv (5.2d-8) unstable; urgency=low
+
+  * g++-3.3 fixes. Closes: #196715.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Sun, 15 Jun 2003 15:04:49 +0200
+
+qsstv (5.2d-7) unstable; urgency=low
+
+  * Oops. Fix a typo in debian/rules so configform.ui gets touched.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Sun, 16 Mar 2003 10:50:00 +0100
+
+qsstv (5.2d-6) unstable; urgency=low
+
+  * Touch the ui files before building, so that the makefile regenerate
+    any .cpp and .h files depending on them.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Sat, 15 Mar 2003 14:19:09 +0100
+
+qsstv (5.2d-5) unstable; urgency=low
+
+  * Add qt3-dev-tools to the Build-Depends line, so moc gets called
+    and zoomform.cpp compiles correctly. Closes: #184591.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Fri, 14 Mar 2003 20:02:19 +0100
+
+qsstv (5.2d-4) unstable; urgency=low
+
+  * Several lintian fixes.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Sat, 22 Feb 2003 10:14:43 +0100
+
+qsstv (5.2d-3) unstable; urgency=low
+
+  * Rebuild for the new C++ API.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Sun,  2 Feb 2003 13:33:57 +0100
+
+qsstv (5.2d-2) unstable; urgency=low
+
+  * Should build-depend on libqt3-mt-dev.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Sat, 23 Nov 2002 09:23:29 +0100
+
+qsstv (5.2d-1) unstable; urgency=low
+
+  * New upstream release, compiled with qt3.
+  * Update standards version.
+  * The upstream author states the package should compile correctly with
+    gcc-3.2 (Closes: #139035).
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Thu, 14 Nov 2002 21:57:45 +0100
+
+qsstv (5.1a-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Mon, 18 Mar 2002 09:17:01 +0100
+
+qsstv (5.0g-2) unstable; urgency=low
+
+  * Pass "-O0 -mieee" to $(CXXFLAGS) for alpha builds. Closes: #121694.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Fri, 30 Nov 2001 10:08:35 +0100
+
+qsstv (5.0g-1) unstable; urgency=low
+
+  * New upstream release.
+  * Include patch by James Troup for g++3.0. Closes: #120520.
+  * Run 'libtoolize --force -c' and 'aclocal' again.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Wed, 21 Nov 2001 20:20:48 +0100
+
+qsstv (5.0f-2) unstable; urgency=low
+
+  * Run libtoolize and aclocal for hppa. Closes: #108255.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Thu, 30 Aug 2001 20:56:13 +0200
+
+qsstv (5.0f-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Mon, 30 Jul 2001 02:00:06 +0200
